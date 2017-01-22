@@ -1,0 +1,7 @@
+FROM alpine:3.4
+ENV APP_ROOT /usr/src/app
+ARG REQUIREMENTS
+
+COPY $REQUIREMENTS $APP_ROOT/ 
+
+

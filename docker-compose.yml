@@ -1,0 +1,9 @@
+version: '2'
+services:
+  env-test:
+    build:
+      context: .
+      args:
+        REQUIREMENTS: "requirements_dev.txt"
+    command:  cat /usr/src/app/requirements_dev.txt
+
